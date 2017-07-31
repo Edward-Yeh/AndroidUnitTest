@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright©, 2017 Gemtek Technology Co., Ltd.
  * All rights reserved.
  */
