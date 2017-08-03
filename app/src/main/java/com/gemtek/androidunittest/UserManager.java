@@ -7,6 +7,6 @@ package com.gemtek.androidunittest;
 
 public class UserManager {
     public void performLogin(String username, String password) {
-        //perform login and post LoginResult event
+        System.out.printf("[Class] UserManager:\tUser: %s, Password: %s\n", username, password);
     }
 }
