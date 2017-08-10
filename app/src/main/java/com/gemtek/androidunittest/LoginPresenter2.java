@@ -14,7 +14,9 @@ public class LoginPresenter2 {
     }
 
     public void login(String username, String password) {
-        if (username == null || username.length() == 0) return;
+        if (username == null || username.length() == 0) {
+            return;
+        }
 
         mUserManager.performLogin(username, password);
     }

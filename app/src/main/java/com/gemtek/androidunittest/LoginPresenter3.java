@@ -16,9 +16,13 @@ public class LoginPresenter3 {
     }
 
     public void login(String username, String password) {
-        if (username == null || username.length() == 0) return;
+        if (username == null || username.length() == 0) {
+            return;
+        }
 
-        if (!mPasswordValidator.verifyPassword(password)) return;
+        if (!mPasswordValidator.verifyPassword(password)) {
+            return;
+        }
 
         mUserManager.performLogin(username, password);
     }

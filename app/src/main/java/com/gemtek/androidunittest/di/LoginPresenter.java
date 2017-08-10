@@ -20,9 +20,13 @@ public class LoginPresenter {
     public void login(String username, String password) {
         System.out.printf("[Class] LoginPresenter:\tUser: %s, Password: %s\n", username, password);
 
-        if (username == null || username.length() == 0) return;
+        if (username == null || username.length() == 0) {
+            return;
+        }
 
-        if (!mPasswordValidator.verifyPassword(password)) return;
+        if (!mPasswordValidator.verifyPassword(password)) {
+            return;
+        }
 
         mUserManager.performLogin(username, password);
     }
