@@ -11,6 +11,7 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.not;
 
 public class CalculatorTestWithHamcrest {
     Calculator mCalculator;
@@ -28,6 +29,8 @@ public class CalculatorTestWithHamcrest {
         int actual = mCalculator.add(1, 2);
         //Assert
         assertThat(actual, is(equalTo(expected)));
+        assertThat(actual, is(expected));
+        assertThat(actual, is(not(expected + 1)));
     }
 
     @Test

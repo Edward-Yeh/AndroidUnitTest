@@ -16,7 +16,6 @@ import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.hamcrest.Matchers.everyItem;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.hasSize;
-import static org.hamcrest.Matchers.not;
 
 public class ListTestWithHamcrest {
     private List<Integer> mList;
@@ -28,9 +27,9 @@ public class ListTestWithHamcrest {
     }
 
     @Test
-    public void notHasSizeOf4() {
+    public void hasSizeOf3() {
         // Assert
-        assertThat(mList, not(hasSize(4)));
+        assertThat(mList, hasSize(3));
     }
 
     @Test
