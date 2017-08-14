@@ -1,0 +1,22 @@
+apply plugin: 'checkstyle'
+
+check.dependsOn 'checkstyle'
+
+def configDir = "${project.rootDir}/config"
+def reportsDir = "${project.buildDir}/reports"
+
+task checkstyle(type: Checkstyle) {
+    configFile file("$configDir/checkstyle/gemtek_CheckStyle.xml")
+    source 'src/main/java'
+    include '**/*.java'
+    exclude '**/gen/**'
+    exclude '**/R.java'
+    exclude '**/BuildConfig.java'
+    classpath = files()
+    reports {
+        html.enabled = true
+        html {
+            destination "$reportsDir/checkstyle/checkstyle.html"
+        }
+    }
+}
