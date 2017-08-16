@@ -19,9 +19,6 @@ public class LoginPresenter2Test {
     @Mock
     UserManager mMockUserManager;
 
-    @Mock
-    PasswordValidator mValidator;
-
     @Test
     public void verifyPerformLogin() {
         // Arrange
