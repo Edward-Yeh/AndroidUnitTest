@@ -7,7 +7,7 @@ package com.gemtek.androidunittest;
 
 public class LoginPresenter2 {
 
-    private UserManager mUserManager = new UserManager();
+    private UserManager mUserManager;
 
     public LoginPresenter2 (UserManager userManger) {
         mUserManager = userManger;
