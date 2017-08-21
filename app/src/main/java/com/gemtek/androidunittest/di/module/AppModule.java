@@ -1,5 +1,7 @@
-// Copyright © 2017 Gemtek Technology Co., Ltd.
-// All rights reserved.
+/*
+ * Copyright © 2017 Gemtek Technology Co., Ltd.
+ * All rights reserved.
+ */
 
 package com.gemtek.androidunittest.di.module;
 
