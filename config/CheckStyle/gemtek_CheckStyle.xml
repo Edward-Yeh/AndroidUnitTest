@@ -8,6 +8,10 @@
 
     <property name="charset" value="UTF-8"/>
 
+    <module name="RegexpHeader">
+        <property name="headerFile" value="config/CheckStyle/CopyrightHeader.txt"/>
+    </module>
+
     <!-- severity: value=error causes build fail -->
     <property name="severity" value="warning"/>
 

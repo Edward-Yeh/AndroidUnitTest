@@ -1,3 +1,6 @@
+// Copyright © 2017 Gemtek Technology Co., Ltd.
+// All rights reserved.
+
 package com.gemtek.androidunittest;
 
 import android.support.v7.app.AppCompatActivity;
