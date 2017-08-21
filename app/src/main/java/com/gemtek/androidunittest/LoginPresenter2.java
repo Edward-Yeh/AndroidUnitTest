@@ -9,7 +9,7 @@ public class LoginPresenter2 {
 
     private UserManager mUserManager;
 
-    public LoginPresenter2 (UserManager userManger) {
+    public LoginPresenter2(UserManager userManger) {
         mUserManager = userManger;
     }
 
